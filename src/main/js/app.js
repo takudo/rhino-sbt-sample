@@ -4,7 +4,7 @@
 //var executor = java.util.concurrent.Executors.newCachedThreadPool();
 //executor.submit(runnable);
 
-//importPackage(com.example.JsExecuteContext);
+var mainPackages = JavaImporter(Packages.com.example);
 
 function Toto(){
     this.say = function(content){
@@ -13,3 +13,7 @@ function Toto(){
 }
 
 new Toto().say("hoge");
+
+//object sharing
+var sharing = mainPackages.ObjectSharing.getInstance();
+sharing.setContent("sharing between js and java !");

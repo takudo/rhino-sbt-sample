@@ -32,5 +32,7 @@ class Main {
         while((line = snatcher.readLine()) != null){
             System.out.println("aaa:" + line);
         }
+
+        System.out.println(ObjectSharing.getInstance().getContent());
     }
 }
